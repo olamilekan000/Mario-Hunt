@@ -28,6 +28,11 @@ class Board extends React.Component {
     }
   }
 
+  restartGame = (e) => {
+    e.preventDefault()
+    this.props.history.push('/')
+  }
+
   removeVillain = (playerType) => {
     const getVillain = this.state.villain
     if (playerType === 'villain') {
@@ -76,8 +81,8 @@ class Board extends React.Component {
     e.preventDefault()
 
     let player = this.player.current
-    let rowposition =  parseInt(this.player.current.getAttribute('rowposition'), 10)
-    let columnposition =  parseInt(this.player.current.getAttribute('columnposition'), 10)
+    let rowposition =  parseInt(this.player.current.getAttribute('rowposition'), 10) || 2
+    let columnposition =  parseInt(this.player.current.getAttribute('columnposition'), 10) || 2
     let table = this.table.current
 
     const numberOfBoardHeight = parseInt(this.props.boardSize, 10) || 5
@@ -201,8 +206,11 @@ class Board extends React.Component {
   render() {
     return (
        <div className="container">
-        <div style={{display: this.state.display, textAlign: 'center'}}>
-          <h6 className="blinking">It took you {this.state.moves}  moves to conquer King Wart!</h6>
+
+        <div>
+          <div style={{display: this.state.display, textAlign: 'center', alignItems: 'center'}}>
+            <h6 className="blinking">It took you {this.state.moves}  moves to conquer King Wart!</h6>
+          </div>
         </div>
         <div id="table">
           <table ref={this.table}>
@@ -216,6 +224,7 @@ class Board extends React.Component {
           </table>
           <div className="test">
             <h5 style={{color: '#fff'}}>Moves: { this.state.moves }</h5>
+            <button className="btn" onClick={this.restartGame}>Restart</button>
           </div>
         </div>
        </div>

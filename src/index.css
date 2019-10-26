@@ -5,7 +5,10 @@
 }
 
 .test {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
 }
 
 body {
@@ -65,6 +68,13 @@ input[type=number]:not(.browser-default) {
 #images {
   display: flex;
   justify-content: space-evenly;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
 }
 
 .blinking{

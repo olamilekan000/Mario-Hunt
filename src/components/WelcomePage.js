@@ -35,7 +35,7 @@ class Landingpage extends React.Component {
   }
 
   componentDidMount() {
-    sound('http://23.237.126.42/ost/dance-dance-revolution-mario-mix/jgncykpb/02%20dokan%20no%20naka%20no%20mozart.mp3')
+    sound('http://www.mariomayhem.com/downloads/sound_tracks/Super_Mario_Bros._1/07-castle-complete.mp3')
 
     this.setState({
       boardSize: 5
