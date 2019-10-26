@@ -3,3 +3,33 @@
 ## Mario Hunt
 
 Fight Villains while trying to make it out of a maze!
+
+## Features
+
+- Mario
+- Villains
+- Maze
+
+## Technologies
+
+- [React.js](https://reactjs.org/) as the UI framework.
+- [Firebase](https://firebase.google.com/) as the hosting service.
+
+## Getting started
+
+```sh
+
+# Clone the project
+git clone https://github.com/olamilekan000/Mario-Hunt.git
+cd Mario-Hunt
+
+# Install dependencies
+npm install
+
+```
+
+Then you can start the application:
+
+```sh
+npm start or npm run start
+```
