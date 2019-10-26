@@ -1,0 +1,79 @@
+
+.container {
+  /* width: 50%; */
+  margin: auto;
+}
+
+.test {
+  text-align: center;
+}
+
+body {
+  background: #243447;
+}
+
+td {
+  border: 3px solid black;
+}
+
+td{
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+tr {
+  height: 8em;
+}
+
+table {
+  margin-top: 10%;
+}
+
+input[type=number]:not(.browser-default) {
+  width: 13%;
+  color: #fff;
+}
+
+#player > img,
+#villain > img {
+  width: 60%;
+}
+
+#villain, #player {
+  border-radius: 100%;
+}
+
+#landingImage > image{
+  margin: auto;
+}
+
+#title {
+  font-family: 'Modak', cursive;
+  font-size: 10em;
+}
+
+#table {
+  width: 45%;
+  margin: auto;
+}
+
+#king_warts {
+  width: 35%;
+}
+
+#images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blinking{
+  animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+  0%{ color: #10c018;}
+  25%{ color: #1056c0;}
+  50%{ color: #ef0a1a;}
+  75%{ color: #254878;}
+  100%{ color: #04a1d5;}
+}
